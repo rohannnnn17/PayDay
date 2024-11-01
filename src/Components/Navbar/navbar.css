@@ -1,0 +1,63 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: white;
+}
+
+/* Logo styling */
+.navbar-logo h2 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+
+/* Links styling */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  font-size: 16px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Auth links styling */
+.navbar-auth {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-link {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.auth-link:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-links,
+  .navbar-auth {
+    display: none; /* Hide links on small screens */
+  }
+}
